@@ -18,21 +18,6 @@
     --black: #000000;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex-grow: 1;
-}
-
 h1,
 h2,
 h3,
@@ -89,66 +74,24 @@ p {
     color: var(--secondary) !important;
 }
 
+/* MAIN */
+
 /* PORTADA */
 .image-container {
-    position: relative;
-    width: 90%;
-    height: 50%;
-    margin: 0.5em auto;
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    margin: 1em;
+/* ESTA CLASE ROMPE EL FLUJO DE LA PAGINA;Y HACE QUE SE SUPERPONGAN COSAS HAY QUE REVISAR PARA LOGRAR PONERLE EL TEXXTO ENCIMA Y UNA CAPA DE OPACIDAD A LA IMAGEN SIN ROMPER EL RESTO  */
 }
-
-.image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-    border-radius: 25px;
-}
-
 .text-overlay {
-    position: absolute;
-    bottom: 70px;
-    right: 10px;
-    width: 30%;
-    padding: 0.5em;
-}
-
-.text {
-    color: var(--white);
+    color: #fff;
     font-size: 2rem;
+    text-align: center;
 }
 
-/* FOOTER */
-footer {
-    clear: both;
-    position: relative;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: auto;
-}
-.footer-container {
-    width: 100%;
-    height: 100%;
-}
-.img-favicon-inner {
-    max-width: 200px;
-    height: auto;
-}
-
-#logo_uade {
-    max-width: 150px;
-}
-
-.footer-text {
-    color: #767676 !important;
-}
-
-/* MAIN */
+/* AVANCES */
 .color-box {
     margin: 10px;
     text-align: center;
