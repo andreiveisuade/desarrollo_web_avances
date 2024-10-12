@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.popins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.quicksand {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder !important;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.h1 {
+    font-size: 3rem;
+}
+
+.footer-text {
+    color: #767676 !important;
+}
+
+.logo-tigervet {
+    max-width: 300px;
+    height: auto;
+}
+
+.img-favicon-inner {
+    max-width: 200px;
+    height: auto;
+}
+
+#logo_uade {
+    max-width: 150px;
+}
+
+.color-box {
+    margin: 10px;
+    text-align: center;
+}
+
+.box {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+}
+
+#color-448C44 {
+    background-color: #448C44;
+}
+
+#color-90D373 {
+    background-color: #90D373;
+}
+
+#color-FE9505 {
+    background-color: #FE9505;
+}
+
+#color-FEA157 {
+    background-color: #FEA157;
+}
+
+#color-FED69F {
+    background-color: #FED69F;
+}
