@@ -1,16 +1,21 @@
+@import url(https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold);
+
+@import url(https://db.onlinewebfonts.com/c/49bf5d043a27b890a040cf393277e2b2?family=TT+Norms+Pro+Regular);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.popins {
-    font-family: 'Poppins', sans-serif;
-}
-
-.quicksand {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bolder !important;
+/* GENERALES */
+:root {
+    --primary: #2A5328;
+    --secondary: #FE9504;
+    --tertiary: #CDE0CD;
+    --quaternary: #F5D1DD;
+    --white: #FEFDFD;
+    --black: #000000;
 }
 
 html,
@@ -28,19 +33,108 @@ main {
     flex-grow: 1;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Feather Bold";
+}
+
+p {
+    font-family: "TT Norms Pro Regular";
+}
+
+.feather-bold {
+    font-family: "Feather Bold";
+}
+
+.tt-norms-pro {
+    font-family: "TT Norms Pro Regular";
+}
+
 .h1 {
     font-size: 3rem;
 }
 
-.footer-text {
-    color: #767676 !important;
+/* HEADER */
+.navbar {
+    margin: 1em;
+    padding: 1em;
+    background-color: var(--tertiary) !important;
+    border-radius: 35px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--quaternary);
 }
 
 .logo-tigervet {
-    max-width: 300px;
+    max-width: 10%;
     height: auto;
 }
 
+.logo-tigervet:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.nav-link {
+    color: var(--primary) !important;
+    font-size: 1.3rem !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary) !important;
+}
+
+/* PORTADA */
+.image-container {
+    position: relative;
+    width: 90%;
+    height: 50%;
+    margin: 0.5em auto;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    border-radius: 25px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+    width: 30%;
+    padding: 0.5em;
+}
+
+.text {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+/* FOOTER */
+footer {
+    clear: both;
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+.footer-container {
+    width: 100%;
+    height: 100%;
+}
 .img-favicon-inner {
     max-width: 200px;
     height: auto;
@@ -50,6 +144,11 @@ main {
     max-width: 150px;
 }
 
+.footer-text {
+    color: #767676 !important;
+}
+
+/* MAIN */
 .color-box {
     margin: 10px;
     text-align: center;
@@ -62,22 +161,26 @@ main {
     padding: 15px;
 }
 
-#color-448C44 {
-    background-color: #448C44;
+#color-primary {
+    background-color: var(--primary);
 }
 
-#color-90D373 {
-    background-color: #90D373;
+#color-secondary {
+    background-color: var(--secondary);
 }
 
-#color-FE9505 {
-    background-color: #FE9505;
+#color-tertiary {
+    background-color: var(--tertiary);
 }
 
-#color-FEA157 {
-    background-color: #FEA157;
+#color-quaternary {
+    background-color: var(--quaternary);
 }
 
-#color-FED69F {
-    background-color: #FED69F;
+#color-white {
+    background-color: var(--white);
+}
+
+#color-black {
+    background-color: var(--black);
 }
