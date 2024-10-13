@@ -19,15 +19,16 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light justify-content-end">
             <div class="container-fluid">
                 <a class="navbar-brand me-auto d-flex align-items-center" href="./index.html">
-                    <img src="../assets/logo_tigrevet.png" alt="logo tigrevet" class="me-2 logo-tigervet px-3">
+                    <img src="../assets/logo_tigrevet.png" aria-current="page" alt="logo tigrevet"
+                        class="me-2 logo-tigervet px-3">
                 </a>
                 <div class="collapse navbar-collapse pe-5 fs-4" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./pages/diseño.html">Diseño</a>
+                            <a class="nav-link" href="./pages/diseño.html">Diseño</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/integrantes.html">Integrantes</a>
@@ -49,106 +50,152 @@
     <!-- main -->
 
     <main>
+
         <!-- PORTADA -->
-        <div class="container">
-            <img src="./assets/tigrevet-cartel.png" alt="image">
-            <div class="text-overlay">
-                <p>Portada</p>
+        <section class="container-fluid position-relative p-5 d-flex justify-content-center align-items-center">
+            <img src="./assets/tigrevet-cartel.png" alt="hero tigerVet" class="hero-tigervet img-fluid">
+            <div class="text-overlay position-absolute top-50 start-50 translate-middle">
+                <p>Un nuevo concepto <br>en salud veterinaria, <br><span class="feather-bold">en el corazón de la ciudad
+                        de Tigre.</span> <br>Todo para el cuidado
+                    integral y la salud de los animales.</p>
             </div>
-        </div>
+        </section>
 
-        <!-- AVANCES -->
-        <div class="container mt-5 text-center">
-            <h1 class="text-center">Avances</h1>
-            
-            <div class="row text-center m-4">
-                <h2>Propuesta</h2>
-            </div>
-            <div class="row text-center m-4">
-                <h2 class="text-center quicksand">Nombre de la página</h2>
-                <p>TigreVet</p>
-            </div>
-            <div class="row text-center m-4">
-                <h2>Eslogan</h2>
-                <p class="text-center quicksand">“Rescate, cuidado y amor para todos los animales”</p>
-            </div>
-            <div class="row text-center m-4">
-                <div class="col">
-                    <h2>Logo</h2>
-                    <div class="d-flex justify-content-center">
-                        <img class="img-favicon-inner" src="./assets/logo_tigrevet.png" alt="favicon tigerVet"
-                            style="max-width: 250px; height: auto;">
-                    </div>
-                </div>
-                <div class="col">
-                    <h2>Favicon</h2>
-                    <div class="d-flex justify-content-center">
-                        <img class="img-favicon-inner" src="./assets/favicon.png" alt="favicon tigerVet"
-                            style="max-width: 250px; height: auto;">
-                    </div>
-                </div>
-            </div>
+        <!-- NUESTRA PROPUESTA -->
 
-            <!-- PALETA DE COLORES -->
-            <div class="row text-center m-4">
-                 <h2>Paleta de colores</h2>
-                <div class="d-flex justify-content-center align-items-center flex-wrap">
-                    <div class="color-box text-center m-2">
-                        <div id="color-primary" class="box"></div>
-                        <p>#2A5328</p>
-                    </div>
-                    <div class="color-box text-center m-2">
-                        <div id="color-secondary" class="box"></div>
-                        <p>#FE9504</p>
-                    </div>
-                    <div class="color-box text-center m-2">
-                        <div id="color-tertiary" class="box"></div>
-                        <p>#CDE0CD</p>
-                    </div>
-                    <div class="color-box text-center m-2">
-                        <div id="color-quaternary" class="box"></div>
-                        <p>#F5D1DD</p>
-                    </div>
-                    <div class="color-box text-center m-2">
-                        <div id="color-white" class="box"></div>
-                        <p>#FEFDFD</p>
-                    </div>
-                    <div class="color-box text-center m-2">
-                        <div id="color-black" class="box"></div>
-                        <p>#000000</p>
-                    </div>
-                </div>
+        <section class="container my-5 mb-5">
+            <div class="row">
+                <h2 class="feather-bold mb-4 display-5">Nuestra Propuesta</h2>
             </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <p>
+                        <span class="fw-bold">TigreVet es una clínica veterinaria ubicada en el corazón de Tigre</span>,
+                        Buenos Aires, <span class="fw-bold">comprometida
+                            con brindar atención integral y especializada a las mascotas, al mismo tiempo que contribuye
+                            activamente a la preservación de la fauna local.</span><br><br>
 
-            <!-- FUENTES -->
-            <div class="row text-center m-4">
-                <h2>Fuentes</h2>
-                <div class="d-flex justify-content-center">
-                    <div class="col-md-5 p-3 m-2 border">
-                        <h3>Feather Bold</h3>
-                        <h5 style="text-align: left;">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h5>
-                        <p class="feather-bold" style="text-align: left;">a b c d e f g h i j k l m n o p q r s t u v w
-                            x y z</h6>
-                        <p class="feather-bold" style="text-align: left;">0 1 2 3 4 5 6 7 8 9</p>
+                        Con años de experiencia, su equipo de veterinarios y personal capacitado está dedicado al
+                        bienestar y la salud de cada paciente, <span class="fw-bold">ofreciendo un servicio
+                            personalizado que abarca desde
+                            consultas de rutina hasta procedimientos quirúrgicos complejos.</span><br><br>
+
+                        <span class="fw-bold">El enfoque de TigreVet se basa en la excelencia en atención veterinaria,
+                            el respeto por la vida
+                            animal y la responsabilidad ambiental.</span> Además de su labor con mascotas, la clínica
+                        está
+                        profundamente comprometida con la conservación de la biodiversidad de la región. Gracias a su
+                        <span class="fw-bold">alianza con la Fundación Vida Silvestre Argentina, miembro de la red WWF,
+                            TigreVet trabaja
+                            activamente en la protección de la fauna autóctona de Tigre y en la educación de la
+                            comunidad
+                            sobre la importancia de cuidar el entorno natural.</span><br><br>
+
+                        <span class="fw-bold">Entre los servicios que ofrece TigreVet se encuentran clínica general,
+                            cirugía, castración y una
+                            guardería segura y confortable para las mascotas.</span> Su objetivo es crear un ambiente en
+                        el que
+                        tanto los animales como sus dueños se sientan cómodos y confiados, sabiendo que están recibiendo
+                        la mejor atención posible.<br><br>
+
+                        <span class="fw-bold">Tigrevet no solo se enfoca en la salud de las mascotas, sino también en
+                            generar un impacto
+                            positivo en la comunidad mediante la concientización y la toma de acciones concretas para la
+                            preservación del medio ambiente.</span> Invitan a todos a conocer sus instalaciones, a
+                        confiar en sus
+                        servicios y a formar parte de su misión de cuidar y proteger a los animales y su entorno.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-pink p-3 mb-3">
+                        <h3>Público objetivo</h3>
+                        <p>El público objetivo de TigreVet está compuesto por hombres y mujeres de entre 25 y 55 años,
+                            principalmente de clase media y media-alta, residentes en Tigre y zonas cercanas con una
+                            estructura familiar estable.
+
+                            Son personas con un fuerte vínculo emocional con sus mascotas, que valoran la atención
+                            veterinaria de calidad y personalizada. Buscan servicios integrales para el cuidado de la
+                            salud de sus animales.
+
+                            Además, son conscientes del medio ambiente y apoyan iniciativas de conservación, por lo que
+                            valoran el compromiso de Tigrevet con la fauna local y su alianza con la Fundación Vida
+                            Silvestre Argentina.</p>
+                        <img src="./assets/gente_random.png" alt="gente sonriendo" class="img-fluid gente-sonriendo">
                     </div>
-                    <div class="col-md-5 p-3 m-2 border">
-                        <h3 class="tt-norms-pro">TT Norms Pro</h3>
-                        <h6 class="tt-norms-pro" style="text-align: left;">A B C D E F G H I J K L M N O P Q R S T U V W
-                            X Y Z</h6>
-                        <p style="text-align: left;">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-                        <p style="text-align: left;">0 1 2 3 4 5 6 7 8 9</p>
+                    <div class="bg-green p-3">
+                        <h3 style="color: white;">Objetivos</h3>
+                        <p style="color: white;">El sitio web de TigreVet está diseñado para adaptarse a las necesidades
+                            de su público, ofreciendo una experiencia accesible, funcional y fácil de navegar. Con una
+                            interfaz intuitiva, los usuarios pueden explorar todos los servicios, desde la clínica
+                            general hasta la guardería, y realizar reservas de citas de manera rápida y segura.
+
+                            Además, el sitio proporciona información detallada sobre sus iniciativas de conservación y
+                            su colaboración con la Fundación Vida Silvestre Argentina, reflejando el compromiso de
+                            Tigrevet con el bienestar animal y la protección del medio ambiente. De este modo, los
+                            dueños de mascotas encuentran un espacio confiable donde acceder a todos los servicios
+                            necesarios para el cuidado de sus animales</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row text-center m-4">
-                <h2>Prototipado</h2>
+        <!-- MAPA SITIO -->
+
+        <section class="container-fluid mt-5">
+            <h2 class="text-center feather-bold display-5 mt-5">Mapa de sitio</h2>
+
+            <!-- Botón Home -->
+            <div class="d-flex justify-content-center my-4 position-relative">
+                <button class="btn btn-home my-3">Home</button>
             </div>
 
-            <div class="row text-center m-4">
-                <h2>Roles de los integrantes</h2>
+    
+            <!-- Secciones con flechas -->
+            <div class="row text-center mt-4 px-3 position-relative">
+                <div class="col-md-2 col-12">
+                    <h4 class="feather-bold">Servicios</h4>
+                    <ul class="list-unstyled">
+                        <li>Cirugía</li>
+                        <li>Clínica general</li>
+                        <li>Castración</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12">
+                    <h4 class="feather-bold">Recursos</h4>
+                    <ul class="list-unstyled">
+                        <li>WWF</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12 mt-4 mt-md-0">
+                    <h4 class="feather-bold">Blog</h4>
+                    <ul class="list-unstyled">
+                        <li>Artículos</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12 mt-4 mt-md-0">
+                    <h4 class="feather-bold">Contacto</h4>
+                    <ul class="list-unstyled">
+                        <li>Formulario</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12 mt-4 mt-md-0">
+                    <h4 class="feather-bold">Reserva tu cita</h4>
+                    <ul class="list-unstyled">
+                        <li>Calendario</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12 mt-4 mt-md-0">
+                    <h4 class="feather-bold">Cotiza tu servicio</h4>
+                    <ul class="list-unstyled">
+                        <li>Calculadora</li>
+                    </ul>
+                </div>
+
             </div>
-        </div>
+        </section>
+
+
     </main>
 
 
