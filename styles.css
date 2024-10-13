@@ -125,24 +125,21 @@ p {
 
 /* Estilos del botón Home */
 .btn-home {
-    background-color: var(--primary) !important; /* Color del botón */
+    background-color: var(--primary) !important;
     color: var(--white) !important;
     font-family: 'Feather Bold';
-    padding: 1.25rem 1.75rem !important;
+    padding: 0.5rem 2rem !important;
     font-size: 1.5rem !important;
     border-radius: 20px !important ;
     border: none;
-    transition: all 0.3s ease;
-    position: relative;
 }
 
 .btn-home:hover {
-    background-color: var(--secondary) !important; /* Color hover */
-    transform: scale(1.05);
+    transition: all 0.3s ease;
+    background-color: var(--secondary) !important;
 }
 
 /* Estilos de las flechas */
-
 .row .col-md-2 {
     position: relative; /* Necesario para posicionar ::before y ::after */
 }
@@ -169,10 +166,9 @@ p {
     border-top: 15px solid var(--primary); /* Color de la cabeza */
 }
 
-/* AVANCES */
 
-/* HERO */
-
+/* PAGINA DISEÑO */
+/* PORTADA */
 .hero {
     position: relative;
     background-image: url('./assets/mascotas.png'); /* Replace with your image URL */
