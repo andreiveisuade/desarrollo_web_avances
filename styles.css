@@ -10,11 +10,11 @@
 
 /* GENERALES */
 :root {
-    --primary: #2A5328;
-    --secondary: #FE9504;
-    --tertiary: #CDE0CD;
-    --quaternary: #F5D1DD;
-    --white: #FEFDFD;
+    --primary: #2a5328;
+    --secondary: #fe9504;
+    --tertiary: #cde0cd;
+    --quaternary: #f5d1dd;
+    --white: #fefdfd;
     --black: #000000;
 }
 
@@ -25,19 +25,19 @@ h4,
 h5,
 h6,
 a {
-    font-family: "Feather Bold";
+    font-family: 'Feather Bold';
 }
 
 p {
-    font-family: "TT Norms Pro Regular";
+    font-family: 'TT Norms Pro Regular';
 }
 
 .feather-bold {
-    font-family: "Feather Bold";
+    font-family: 'Feather Bold';
 }
 
 .tt-norms-pro {
-    font-family: "TT Norms Pro Regular";
+    font-family: 'TT Norms Pro Regular';
 }
 
 .h1 {
@@ -52,11 +52,10 @@ p {
     margin-top: 2em !important;
     background-color: transparent !important;
     border-radius: 35px;
-    box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
     max-width: 89%;
     display: flex;
     justify-content: center;
-
 }
 
 @media (max-width: 1000px) {
@@ -65,11 +64,9 @@ p {
     }
 }
 
-
 .navbar-nav .nav-link.active {
     color: var(--secondary) !important;
 }
-
 
 .navbar-nav .nav-link.active:hover {
     color: var(--secondary) !important;
@@ -97,7 +94,7 @@ p {
 /* MAIN */
 
 /* PORTADA */
-.hero-tigervet{
+.hero-tigervet {
     width: 85vw !important;
     max-height: 75vh !important;
     object-fit: cover;
@@ -108,23 +105,23 @@ p {
 
 .text-overlay p {
     font-size: 2.15rem !important;
-    font-family: "TT Norms Pro Regular";
+    font-family: 'TT Norms Pro Regular';
     position: relative;
     top: 50%;
     transform: translate(140%, 30%);
     color: white;
     font-size: 2rem;
-    width: 20vw;    
+    width: 20vw;
 }
 
-
 .bg-pink {
-    background-color: #F5D1DD;
+    background-color: #f5d1dd;
     border-radius: 30px;
 }
 .bg-green {
-    background-color: #2A5328;
+    background-color: #2a5328;
     border-radius: 30px;
+    color: var(--white);
 }
 
 .gente-sonriendo {
@@ -134,12 +131,11 @@ p {
     margin: auto;
 }
 
-
 /* Estilos del botón Home */
 .btn-home {
     background-color: var(--primary) !important; /* Color del botón */
-    color: white !important;
-    font-family: "Feather Bold";
+    color: var(--white) !important;
+    font-family: 'Feather Bold';
     padding: 1.25rem 1.75rem !important;
     font-size: 1.5rem !important;
     border-radius: 20px !important ;
@@ -154,7 +150,6 @@ p {
 }
 
 /* Estilos de las flechas */
-
 
 .row .col-md-2 {
     position: relative; /* Necesario para posicionar ::before y ::after */
@@ -182,8 +177,25 @@ p {
     border-top: 15px solid var(--primary); /* Color de la cabeza */
 }
 
-
 /* AVANCES */
+
+/* HERO */
+
+.hero {
+    position: relative;
+    background-image: url('./assets/mascotas.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 40vh; /* Full height of the viewport */
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat; /* Ajusta el ancho de la imagen para que se ajuste a la pantalla */
+    background-size: 100vw auto;
+}
+
+/* COLORES */
 .color-box {
     margin: 10px;
     text-align: center;
@@ -220,7 +232,18 @@ p {
     background-color: var(--black);
 }
 
+.favicon-inner {
+    width: 10rem !important;
+    height: auto !important;
+    rotate: -20deg;
+}
 
+.logotipo-inner {
+    width: 45rem !important;
+    height: auto !important;
+}
+
+/* QUERY RESPONSIVE */
 @media (max-width: 1600px) {
     .text-overlay p {
         display: none;
@@ -233,3 +256,4 @@ p {
         display: none; /* Puedes ocultar las flechas en móviles si no se ven bien */
     }
 }
+
