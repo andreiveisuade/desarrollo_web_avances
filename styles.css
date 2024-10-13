@@ -245,3 +245,17 @@ p {
     }
 }
 
+
+/* PAGINA INTEGRANTES */
+.intro-integrantes {
+    display: flex;
+    align-items: center;
+}
+.intro-integrantes h1 {
+    width: 45%;
+    margin: 1em;
+    font-size: 2.8rem;
+}
+.intro-integrantes p {
+    margin: 1em;
+}
