@@ -47,48 +47,38 @@ p {
 /* HEADER */
 .navbar {
     margin: 1em auto;
-    padding-left: 1em !important;
-    padding-right: 1em !important;
     margin-top: 2em !important;
     background-color: transparent !important;
     border-radius: 35px;
     box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-    max-width: 89%;
+    max-width: 90%;
     display: flex;
     justify-content: center;
-
 }
-
 @media (max-width: 1000px) {
     .navbar {
         max-width: 95%;
     }
 }
-
 .navbar-nav .nav-link.active {
     color: var(--secondary) !important;
 }
 
-
 .navbar-nav .nav-link.active:hover {
     color: var(--secondary) !important;
 }
-
 .logo-tigervet {
-    max-width: 10rem;
+    max-width: 8rem;
     height: auto;
 }
-
 .logo-tigervet:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-
 .nav-link {
     color: var(--primary) !important;
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
 }
-
 .nav-link:hover {
     color: var(--secondary) !important;
 }
