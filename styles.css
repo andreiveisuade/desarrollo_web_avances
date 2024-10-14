@@ -55,6 +55,12 @@ p {
     display: flex;
     justify-content: center;
 }
+
+.navbar li{
+    display: flex;
+    justify-content: flex-end;
+}
+
 @media (max-width: 1000px) {
     .navbar {
         max-width: 95%;
@@ -106,7 +112,7 @@ p {
     width: 20vw;
 }
 
-.text-overlay-epigraph{
+.text-overlay-epigraph {
     display: none;
 }
 
@@ -143,7 +149,7 @@ p {
     background-color: var(--secondary) !important;
 }
 
-/* Estilos de las flechas */
+/* FLECHAS */
 .row .col-md-2 {
     position: relative;
 }
@@ -154,7 +160,7 @@ p {
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1px;
+    width: 3px;
     height: 30px;
     background-color: var(--primary);
 }
@@ -169,7 +175,6 @@ p {
     border-right: 10px solid transparent;
     border-top: 15px solid var(--primary);
 }
-
 
 /* PAGINA DISEÑO */
 /* PORTADA */
@@ -240,7 +245,7 @@ p {
     .text-overlay p {
         display: none;
     }
-    .text-overlay-epigraph{
+    .text-overlay-epigraph {
         display: block;
     }
 }
@@ -277,7 +282,7 @@ p {
 }
 
 .card {
-    border: none!important;
+    border: none !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,12 +310,28 @@ p {
     z-index: 1;
 }
 
+@media (max-width: 1200px) {
+    .bulldogui {
+        display: none;
+    }
+}
+
 .links a {
-    color: var(--black)!important;
-    text-decoration: none!important;
+    color: var(--black) !important;
+    text-decoration: none !important;
 }
 
 .links a:hover {
     transition: ease-in-out 0.2s;
     transform: scale(1.1);
+}
+
+.hero-links {
+    margin-top: 250px;
+}
+
+@media (max-width: 1200px) {
+    .hero-links {
+        margin-top: 0px;
+    }
 }
