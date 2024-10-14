@@ -106,6 +106,10 @@ p {
     width: 20vw;
 }
 
+.text-overlay-epigraph{
+    display: none;
+}
+
 .bg-pink {
     background-color: #f5d1dd;
     border-radius: 30px;
@@ -141,29 +145,29 @@ p {
 
 /* Estilos de las flechas */
 .row .col-md-2 {
-    position: relative; /* Necesario para posicionar ::before y ::after */
+    position: relative;
 }
 
 .row .col-md-2::before {
     content: '';
     position: absolute;
-    top: -30px; /* Ubica el cuerpo al principio de la columna */
-    left: 50%; /* Centra horizontalmente */
-    transform: translateX(-50%); /* Compensa el desplazamiento del 50% */
-    width: 1px; /* Ancho del cuerpo de la flecha */
-    height: 30px; /* Altura del cuerpo de la flecha */
-    background-color: var(--primary); /* Color del cuerpo */
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 30px;
+    background-color: var(--primary);
 }
 
 .row .col-md-2::after {
     content: '';
     position: absolute;
-    top: -10px; /* Justo debajo del cuerpo de la flecha */
-    left: 50%; /* Centra horizontalmente */
-    transform: translateX(-50%); /* Compensa el desplazamiento del 50% */
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 15px solid var(--primary); /* Color de la cabeza */
+    border-top: 15px solid var(--primary);
 }
 
 
@@ -171,15 +175,15 @@ p {
 /* PORTADA */
 .hero {
     position: relative;
-    background-image: url('./assets/mascotas.png'); /* Replace with your image URL */
+    background-image: url('./assets/mascotas.png');
     background-size: cover;
     background-position: center;
-    height: 40vh; /* Full height of the viewport */
+    height: 40vh;
     color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-repeat: no-repeat; /* Ajusta el ancho de la imagen para que se ajuste a la pantalla */
+    background-repeat: no-repeat;
     background-size: 100vw auto;
 }
 
@@ -236,15 +240,17 @@ p {
     .text-overlay p {
         display: none;
     }
+    .text-overlay-epigraph{
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {
     .row .col-md-2::before,
     .row .col-md-2::after {
-        display: none; /* Puedes ocultar las flechas en móviles si no se ven bien */
+        display: none;
     }
 }
-
 
 /* PAGINA INTEGRANTES */
 .intro-integrantes {
