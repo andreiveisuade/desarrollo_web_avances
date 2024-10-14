@@ -257,5 +257,6 @@ p {
     font-size: 2.8rem;
 }
 .intro-integrantes p {
+    width: 5%;
     margin: 1em;
 }
