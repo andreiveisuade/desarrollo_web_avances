@@ -24,6 +24,10 @@
                 <a class="navbar-brand me-auto d-flex align-items-center" href="../index.html">
                     <img src="../assets/logo_tigrevet.png" alt="logo tigrevet" class="me-2 logo-tigervet px-3">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse pe-5 fs-4" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -37,11 +41,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
         </nav>
     </header>
@@ -49,7 +48,6 @@
     <!-- MAIN -->
 
     <main>
-
         <!-- IMAGEN HERO -->
         <section class="hero my-3">
             <div class="container-fluid">
@@ -62,54 +60,35 @@
             </div>
         </section>
 
-
-
-
-        <!-- Container principal -->
+        <!-- IDENTIDAD VISUAL -->
         <section class="container my-3">
-
-            <!-- Primer Row: Título h1 -->
             <div class="row">
                 <div class="col">
-                    <h1 class="text-start mt-3 display-5">Identidad Visual</h1>
+                    <h1 class="text-start mt-5 display-4">Identidad Visual</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-start display-7 my-5 mb-5">Decisiones tipográficas</h2>
                 </div>
             </div>
 
-            <!-- Segundo Row: Subtítulo h2 -->
             <div class="row">
-                <div class="col">
-                    <h2 class="text-start display-7 my-4 mb-5">Decisiones tipográficas</h2>
-                </div>
-            </div>
-
-            <!-- Tercer Row: Estructura de dos columnas -->
-            <div class="row">
-
-                <!-- Columna de 4 con dos rows -->
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="row">
-                        <h6 class="feather-bold">Feather Bold</h6>
-                        <p class="uppercase text-uppercase feather-bold" style="word-break: break-word;">
-                            ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                        <p class="lowercase text-lowercase feather-bold" style="word-break: break-word;">
-                            abcdefghijklmnopqrstuvwxyz</p>
-                        <p class="feather-bold" style="word-break: break-word;">0123456789</p>
-
+                        <h6 class="feather-bold fs-3">Feather Bold</h6>
+                        <p class="feather-bold fs-5" style="word-break: break-word;">
+                            ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
                     </div>
                     <div class="row">
-                        <h6 class="tt-norms-pro">TT Norms Pro Regular</h6>
-                        <p class="uppercase text-uppercase tt-norms-pro" style="word-break: break-word;">
-                            ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                        <p class="lowercase text-lowercase tt-norms-pro" style="word-break: break-word;">
-                            abcdefghijklmnopqrstuvwxyz</p>
-                        <p class="tt-norms-pro" style="word-break: break-word;">0123456789</p>
-
+                        <h6 class="tt-norms-pro mt-3 fs-3">TT Norms Pro Regular</h6>
+                        <p class="tt-norms-pro fs-5 mb-5" style="word-break: break-word;">
+                            ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
                     </div>
                 </div>
 
-                <!-- Columna de 8 con párrafo de lorem ipsum -->
-                <div class="col-md-8">
-                    <p>
+                <div class="col-md-7">
+                    <p class="fs-5 mb-4 m-4">
                         Se decide trabajar con la combinación tipográfica de Feather Bold y TT Norms Pro, logrando un
                         equilibrio entre impacto visual y legibilidad. <br><br>
 
@@ -124,30 +103,20 @@
                     </p>
                 </div>
             </div>
-
         </section>
 
-
         <!-- PALETA DE COLORES -->
-
-
 
         <section class="container my-5">
             <div class="row">
                 <div class="col">
-                    <h2 class="text-start mt-4">Paleta de Colores</h2>
+                    <h2 class="display-7 text-start mt-5">Paleta de Colores</h2>
                 </div>
             </div>
-
-            <!-- Segunda fila: dos columnas -->
             <div class="row">
-                <!-- Columna de 4 -->
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <section class="text-center m-4">
                         <div class="d-flex justify-content-center align-items-center flex-wrap">
-
-
-
                             <div class="color-box text-center m-2">
                                 <div id="color-primary" class="box"></div>
                                 <p>#2A5328</p>
@@ -165,7 +134,8 @@
                                 <p>#F5D1DD</p>
                             </div>
                             <div class="color-box text-center m-2">
-                                <div id="color-white" class="box"></div>
+                                <div id="color-white" class="box" style="border: 1px solid rgba(204, 204, 204, 0.5);">
+                                </div>
                                 <p>#FEFDFD</p>
                             </div>
                             <div class="color-box text-center m-2">
@@ -175,10 +145,8 @@
                         </div>
                     </section>
                 </div>
-
-                <!-- Columna de 8 -->
-                <div class="col-8 col-md">
-                    <p class="m-4">
+                <div class="col-md-7">
+                    <p class="m-4 mb-5 fs-5">
                         <span class="fw-bold">La paleta de colores de TigreVet está cuidadosamente seleccionada para
                             transmitir los valores
                             esenciales de la clínica.</span> <br><br>
@@ -197,10 +165,10 @@
         </section>
 
         <section class="container my-5">
-            <div class="row g-2 gap-5"> <!-- Agregamos gap de 4 -->
+            <div class="row g-2 gap-5">
                 <div class="col-md-5 bg-pink gx-4">
-                    <h3 class="mt-4 p-3">Estilo Gráfico</h3>
-                    <p class="p-3">
+                    <h3 class="display-6 mt-4 p-3">Estilo Gráfico</h3>
+                    <p class="fs-5 p-3">
                         El estilo gráfico de TigreVet es <span class="fw-bold">moderno, amigable y orientado a generar
                             confianza. Las formas
                             redondeadas presentes en la tipografía y los elementos gráficos aportan una sensación de
@@ -217,49 +185,50 @@
                     </p>
                 </div>
                 <div class="col-md-6 bg-green gx-4">
-                    <h3 class="mt-4 p-3">Iconografía</h3>
+                    <h3 class="display-6 mt-4 p-3">Iconografía</h3>
                     <div class="iconos p-3">
-                        <img src="../assets/icons/phone_1.png" alt="Icono de teléfono" class="me-3">
-                        <img src="../assets/icons/phone_2.png" alt="Icono de teléfono" class="me-3">
-                        <img src="../assets/icons/location.png" alt="Icono de ubicación" class="me-3">
-                        <img src="../assets/icons/time.png" alt="Icono de tiempo" class="me-3">
-                        <img src="../assets/icons/mail.png" alt="Icono de mail" class="me-3">
+                        <img src="../assets/icons/phone_1.png" alt="Icono de teléfono" class="icono">
+                        <img src="../assets/icons/phone_2.png" alt="Icono de teléfono" class="icono">
+                        <img src="../assets/icons/location.png" alt="Icono de ubicación" class="icono">
+                        <img src="../assets/icons/time.png" alt="Icono de tiempo" class="icono">
+                        <img src="../assets/icons/mail.png" alt="Icono de mail" class="icono">
                     </div>
-                    <p class="p-3">
-                        La iconografía de TigreVet se caracteriza por un estilo minimalista y claro, con líneas simples
-                        y
-                        limpias que refuerzan la idea de accesibilidad y modernidad. El uso de formas redondeadas en los
+
+                    <p class="fs-5 p-3">
+                        La iconografía de TigreVet <span class="fw-bold">se caracteriza por un estilo minimalista y claro, con líneas simples
+                        y limpias que refuerzan la idea de accesibilidad y modernidad</span>. El uso de formas redondeadas en los
                         íconos, como el teléfono o el sobre, mantiene la coherencia con el estilo amigable y cercano de
-                        la marca.
-                        Esta simplicidad no solo facilita la navegación, sino que también aporta un aire profesional,
+                        la marca. <br><br>
+                        <span class="fw-bold">Esta simplicidad no solo facilita la navegación, sino que también aporta un aire profesional</span>,
                         ayudando a los usuarios a encontrar la información que necesitan de manera rápida y eficiente.
                     </p>
                 </div>
             </div>
         </section>
 
-
         <!-- LOGOTIPO -->
         <section class="container my-5">
             <div class="row">
-                <!-- Columna de 8 -->
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="row">
-                        <h3>Logotipo</h3>
+                        <h3 class="display-6 mt-5">Logotipo</h3>
                     </div>
                     <div class="row">
-                        <img src="../assets/logo_tigrevet.png" alt="Logotipo" class="img-fluid logotipo-inner">
+                        <div class="d-flex justify-content-center justify-content-md-start">
+                            <img src="../assets/logo_tigrevet.png" alt="Logotipo" class="img-fluid logotipo-inner">
+                        </div>
                     </div>
                     <div class="row">
-                        <h3>Isotipo/Favicon</h3>
+                        <h3 class="display-6 mt-4">Isotipo/Favicon</h3>
                     </div>
                     <div class="row">
-                        <img src="../assets/favicon.png" alt="Favicon" class="img-fluid favicon-inner">
+                        <div class="d-flex justify-content-center justify-content-md-start">
+                            <img src="../assets/favicon.png" alt="Favicon" class="img-fluid favicon-inner">
+                        </div>
                     </div>
                 </div>
-                <!-- Columna de 4 -->
-                <div class="col-4">
-                    <p>
+                <div class="col-md-4 mt-5">
+                    <p class="fs-5 mt- m-4">
                         El logo de TigreVet es una <span class="fw-bold">combinación de tipografía personalizada y un
                             elemento gráfico que
                             alude a la fauna local. <span style="color: var(--secondary);font-weight: bold;"> Las
@@ -275,22 +244,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
     </main>
 
     <!-- footer -->
@@ -334,8 +287,8 @@
         </div>
     </footer>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
