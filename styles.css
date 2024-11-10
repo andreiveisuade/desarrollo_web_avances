@@ -314,8 +314,9 @@ p {
 }
 
 .bulldogui {
+    width: 90%;
     position: absolute;
-    top: 75%;
+    top: 110%;
     left: 45%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -341,8 +342,19 @@ p {
     margin-top: 250px;
 }
 
+.cardTigerVet{
+    background-color: #FE9504
+    ;
+}
+
 @media (max-width: 1200px) {
     .hero-links {
         margin-top: 0px;
     }
 }
+
+@media (min-width: 768px) {
+    .ms-md-5 {
+      margin-left: 0rem !important;
+    }
+  }
