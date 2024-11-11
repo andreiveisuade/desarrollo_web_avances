@@ -326,21 +326,6 @@ p {
     z-index: 3;
 }
 
-.bulldogui {
-    width: 90%;
-    position: absolute;
-    top: 110%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-@media (max-width: 1200px) {
-    .bulldogui {
-        display: none;
-    }
-}
-
 .links a {
     color: var(--black) !important;
     text-decoration: none !important;
@@ -392,4 +377,16 @@ p {
     background-color: var(--quaternary)!important;
     color: var(--black)!important;
     border: solid 2px rgb(249, 113, 131)!important;
+}
+
+.card-video {
+    border-radius: 35px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--tertiary)!important;
+}
+
+@media (min-width: 768px) {
+    .card-video iframe {
+        padding: 5rem;
+    }
 }
