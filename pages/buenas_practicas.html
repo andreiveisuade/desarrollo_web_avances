@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Grupo 13">
+    <meta name="description" content="Página de diseño">
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Diseño - Grupo 13</title>
+</head>
+
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light justify-content-end">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto d-flex align-items-center" href="../index.html">
+                    <img src="../assets/logo_tigrevet.png" alt="logo tigrevet" class="me-2 logo-tigervet px-3">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pe-5 fs-4" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/diseño.html">Diseño</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/integrantes.html">Integrantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/links.html">Enlaces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/buenas_practicas.html">Buenas Practicas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="container-fliud">
+        <!-- titulo e introduccion -->
+        <div class="m-5">
+            <h1 class="fs-1">Buenas practicas de accesibilidad y usabilidad</h1>
+            <p class="fs-5 my-5">
+                Para mejorar la experiencia de los usuarios en el sitio web de TigreVet, se han implementado heurísticas
+                de usabilidad y accesibilidad claves. <span class="fw-bold">Estas estrategias buscan facilitar el acceso
+                    rápido y eficiente a la información y servicios que ofrecemos, generar una óptima experiencia de
+                    usuario y asegurar que el contenido sea accesible e inclusivo para todos los usuarios,</span>
+                independientemente de sus capacidades. La aplicación de estas estrategias permite a TigreVet brindar una
+                experiencia digital completa, accesible y agradable para todos.
+            </p>
+        </div>
+        <!-- botonera -->
+        <div class="m-5">
+            <div class="botonera-buenas-practicas">
+                <a href="#" id="usabilidad-btn" class="btn btn-home">Usabilidad <svg xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" fill="currentColor" class="bi bi-caret-down-fill ms-3"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg></a>
+                <a href="#" id="accesibilidad-btn" class="btn btn-home">Accesibilidad <svg
+                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-caret-down-fill ms-3" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg></a>
+            </div>
+        </div>
+
+        <!-- toggle del contenido segun interaccion con botonera  -->
+        <div id="contenido" class="m-5">
+            <!-- usabilidad -->
+            <div id="usabilidad" class="contenido-item">
+                <!-- item 1 -->
+                <div>
+                    <h3>1. Visibilidad del estado del sistema</h3>
+                    <p>Esta heurística tiene como objetivo mantener siempre informados a los usuarios sobre qué está
+                        sucediendo en el sistema y proporcionar retroalimentación en un tiempo considerable.</p>
+                    <ul>
+                        <li>En la barra de navegación se indicará con un color diferente el estado actual de la página
+                            que
+                            el usuario está visitando. En la sección Servicios, se destaca con color y tamaño, el
+                            servicio
+                            elegido.</li>
+                        <li>Al programar una cita, un mensaje o indicador de "cargando" debería aparecer hasta que se
+                            confirme la reserva, y el usuario debería ver una notificación de éxito una vez finalizado
+                            el
+                            proceso.</li>
+                    </ul>
+                </div>
+
+                <!-- item 2 -->
+                <div>
+                    <h3>2. Consistencia y estándares</h3>
+                    <p>Para que los usuarios no deban tener que adivinar el significado de los elementos del sitio, se
+                        utilizan decisiones de diseño reconocibles y consistentes en toda la interfaz.</p>
+                    <ul>
+                        <li> Los CTAs, menús, y elementos interactivos mantienen el mismo estilo, colores y
+                            posicionamiento
+                            en todas las páginas.</li>
+                    </ul>
+                </div>
+
+                <!-- item 3 -->
+                <div>
+                    <h3>3. Prevención de errores</h3>
+                    <p>Esta heurística implica diseñar la interfaz para minimizar los errores del usuario y, cuando
+                        ocurran,
+                        ofrecer mensajes claros y simples que indiquen cómo solucionarlos.</p>
+                    <ul>
+                        <li>En el formulario de contacto, se validan campos para evitar errores comunes, como el ingreso
+                            incorrecto del número de teléfono, y proporciona mensajes de error específicos para ayudar
+                            al
+                            usuario a corregirlo.</li>
+                        <li>Antes de aceptar la reserva de la cita, se mostrará un mensaje recapitulando la información
+                            y el
+                            usuario tendrá otra instancia para aceptar o corregir.</li>
+                    </ul>
+                </div>
+
+                <!-- item 4 -->
+                <div>
+                    <h3>4. Minimización de la carga de memoria del usuario</h3>
+                    <p>El objetivo es reducir la necesidad de recordar elementos previos mostrando opciones o
+                        información
+                        relevantes al usuario en todo momento. Minimiza la carga de memoria del usuario haciendo
+                        visibles
+                        los elementos, acciones y opciones.</p>
+                    <ul>
+                        <li>El header/menú de navegación quedará fijo en todas las páginas para que el usuario tenga al
+                            alcance las otras secciones.</li>
+                    </ul>
+                </div>
+
+                <!-- item 5 -->
+                <div>
+                    <h3>5. Relación entre el sistema y el mundo real</h3>
+                    <p>Es lógico pensar que el diseño debe hablar el mismo idioma que los usuarios, por lo que se deben
+                        utilizar palabras y conceptos que resulten familiares al usuario, haciendo que la información
+                        tenga
+                        un orden lógico y natural.</p>
+                    <ul>
+                        <li> En la sección de reserva de cita se incluye un calendario que sigue el diseño de los
+                            calendarios tradicionales.</li>
+                        <li>La iconografía utilizada en el footer resuena con el mundo real, para que los usuarios
+                            reconozcan y entiendan instantáneamente.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- accesibilidad -->
+            <div id="accesibilidad" class="contenido-item">
+                <!-- item 1 -->
+                <div>
+                    <h3>1. Descripciones textuales alternativas</h3>
+                    <p>
+
+                        Todos los elementos visuales y multimedia deben incluir descripciones alternativas (etiquetas
+                        "alt")
+                        que permitan a los lectores de pantalla interpretarlos.</p>
+                    <ul>
+                        <li>Todas las imágenes de mascotas, íconos de servicios, y fotos de la clínica incluyan
+                            descripciones breves y precisas para usuarios con discapacidad visual.</li>
+                    </ul>
+                </div>
+
+                <!-- item 2 -->
+                <div>
+                    <h3>2. Contraste adecuado entre texto y fondo</h3>
+                    <p>Utilizar un contraste de color adecuado entre el texto y el fondo es esencial para que el
+                        contenido
+                        sea legible. Mejorar la legibilidad del texto asegura que el contenido sea fácil de leer para
+                        todos
+                        los usuarios, lo cual fomenta una experiencia accesible y reduce la fatiga visual, facilitando
+                        la
+                        comprensión del contenido.</p>
+                    <ul>
+                        <li>El texto principal tiene un contraste suficiente en relación al fondo, especialmente en
+                            botones
+                            de CTA, títulos y secciones importantes.</li>
+                    </ul>
+                </div>
+
+                <!-- item 3 -->
+                <div>
+                    <h3>3.Compatibilidad con tecnologías asistivas</h3>
+                    <p>Esta heurística se enfoca en asegurar que el sitio web sea compatible con tecnologías asistivas
+                        como
+                        lectores de pantalla. Esto implica estructurar el código y los elementos visuales de forma que
+                        estas
+                        herramientas puedan interpretar correctamente el contenido.</p>
+                    <ul>
+                        <li> El sitio web de TigreVet cuenta con etiquetas HTML semánticas (como &lt;header&gt;,
+                            &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;) para estructurar el contenido, además de usar
+                            encabezados jerárquicos (&lt;h1&gt;, &lt;h2&gt;, etc.) en las secciones. Esto facilita que
+                            los lectores de pantalla identifiquen y naveguen por el sitio, ayudando a usuarios con
+                            discapacidad visual a moverse fácilmente entre secciones.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="container py-3 mt-auto border-top position-relative">
+        <div class="footer-container" style="height: 100%;">
+            <div class="row">
+                <div class="col-md-4 order-1 order-md-1">
+                    <ul class="nav flex-column align-items-center mt-md-4">
+                        <li class="nav-item my-1">
+                            <p class="text-center text-body-secondary" style="color: #767676 !important;">
+                                © 2024 Todos los derechos reservados
+                            </p>
+                        </li>
+                        <li class="nav-item my-1">
+                            <p class="text-center text-body-secondary" style="color: #767676 !important;">
+                                Sitio desarrollado para uso educativo
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center order-3 order-md-2 my-1 mt-md-4">
+                    <img class="img-fluid" src="../assets/logo_uade.png" alt="" style="max-width: 150px;" />
+                </div>
+
+                <div class="col-md-4 order-2 order-md-3">
+                    <ul class="nav flex-column align-items-center mt-md-4">
+                        <li class="nav-item my-1">
+                            <p class="text-center text-body-secondary" style="color: #767676 !important;">
+                                Materia: Diseño y Desarrollo Web
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="text-center text-body-secondary" style="color: #767676 !important;">
+                                Clase 2495 - Grupo 13 <br> 2do Cuatrimestre
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
+</body>
+
+</html>

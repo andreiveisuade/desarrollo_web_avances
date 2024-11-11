@@ -56,7 +56,7 @@ p {
     justify-content: center;
 }
 
-.navbar li{
+.navbar li {
     display: flex;
     justify-content: flex-end;
 }
@@ -66,6 +66,7 @@ p {
         max-width: 95%;
     }
 }
+
 .navbar-nav .nav-link.active {
     color: var(--secondary) !important;
 }
@@ -73,18 +74,22 @@ p {
 .navbar-nav .nav-link.active:hover {
     color: var(--secondary) !important;
 }
+
 .logo-tigervet {
     max-width: 8rem;
     height: auto;
 }
+
 .logo-tigervet:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
+
 .nav-link {
     color: var(--primary) !important;
     font-size: 1.2rem !important;
 }
+
 .nav-link:hover {
     color: var(--secondary) !important;
 }
@@ -120,6 +125,7 @@ p {
     background-color: #f5d1dd;
     border-radius: 30px;
 }
+
 .bg-green {
     background-color: #2a5328;
     border-radius: 30px;
@@ -140,7 +146,7 @@ p {
     font-family: 'Feather Bold';
     padding: 0.5rem 2rem !important;
     font-size: 1.5rem !important;
-    border-radius: 20px !important ;
+    border-radius: 20px !important;
     border: none;
 }
 
@@ -245,12 +251,14 @@ p {
     .text-overlay p {
         display: none;
     }
+
     .text-overlay-epigraph {
         display: block;
     }
 }
 
 @media (max-width: 768px) {
+
     .row .col-md-2::before,
     .row .col-md-2::after {
         display: none;
@@ -262,11 +270,13 @@ p {
     display: flex;
     align-items: center;
 }
+
 .intro-integrantes h1 {
     width: 45%;
     margin: 1em;
     font-size: 2.8rem;
 }
+
 .intro-integrantes p {
     margin: 1em;
 }
@@ -275,13 +285,16 @@ p {
     .intro-integrantes {
         flex-direction: column;
     }
+
     .intro-integrantes h1 {
         width: 100%;
     }
+
     .intro-integrantes p {
         width: 100%;
     }
 }
+
 .cards-integrantes {
     display: flex;
     flex-wrap: wrap;
@@ -342,9 +355,8 @@ p {
     margin-top: 250px;
 }
 
-.cardTigerVet{
-    background-color: #FE9504
-    ;
+.cardTigerVet {
+    background-color: #FE9504;
 }
 
 @media (max-width: 1200px) {
@@ -355,6 +367,29 @@ p {
 
 @media (min-width: 768px) {
     .ms-md-5 {
-      margin-left: 0rem !important;
+        margin-left: 0rem !important;
     }
-  }
+}
+
+/* PAGINA BUENAS PRACTICAS */
+.botonera-buenas-practicas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;;
+}
+
+.contenido-item {
+    display: none;
+}
+
+.contenido-item.active {
+    display: block;
+}
+
+.btn-home.active {
+    background-color: var(--quaternary)!important;
+    color: var(--black)!important;
+    border: solid 2px rgb(249, 113, 131)!important;
+}
