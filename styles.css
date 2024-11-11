@@ -376,7 +376,6 @@ p {
 .btn-home.active {
     background-color: var(--quaternary)!important;
     color: var(--black)!important;
-    border: solid 2px rgb(249, 113, 131)!important;
 }
 
 .card-video {
@@ -387,6 +386,16 @@ p {
 
 @media (min-width: 768px) {
     .card-video iframe {
-        padding: 5rem;
+        padding-top: 5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-bottom: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-video iframe {
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
     }
 }
